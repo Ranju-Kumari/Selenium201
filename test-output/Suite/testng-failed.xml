@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="utility.ExtentReport"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="execution.TestScriptOne">
+        <methods>
+          <include name="logIn"/>
+          <include name="asetUp"/>
+        </methods>
+      </class> <!-- execution.TestScriptOne -->
+      <class name="execution.TestScriptTwo">
+        <methods>
+          <include name="logIn"/>
+          <include name="asetUp"/>
+        </methods>
+      </class> <!-- execution.TestScriptTwo -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
